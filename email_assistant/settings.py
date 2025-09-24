@@ -14,9 +14,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY", default="insecure-dev-key")  # Make sure to set in production
 DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = config(
-    "ALLOWED_HOSTS", 
-    default="127.0.0.1,localhost,email-assistant-eh8y.onrender.com"
+    "ALLOWED_HOSTS",
+    default="127.0.0.1,localhost,email-assistant-j8h5.onrender.com"
 ).split(",")
+
 
 # --------------------------------------------------------------------
 # DATABASE
@@ -39,8 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "inbox",  # Your app
-    "django_extensions",  # Extra management tools
+    "inbox",  # Your app  # Extra management tools
     "rest_framework",
     "django.contrib.sites",
     "allauth",
